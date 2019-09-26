@@ -442,7 +442,38 @@ input::placeholder {
   box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
 }
 
+.content-wrapper.career {
+    top: 0%;
+    height: 100%;
+}
 
+/* push footer to bottom */
+.career .content {
+    height: calc(100% - 213px);
+}
+
+.job-description {
+    padding: 0 15%;
+}
+
+.job-description .detail {
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.job-description .detail span {
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.job-description .detail.new-line {
+    margin-top: 18px;
+}
+
+.job-description .detail.new-line span {
+    display: block;
+    margin-bottom: 8px;
+}
 
 @media (min-width: 625px) {
 
