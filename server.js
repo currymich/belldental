@@ -23,6 +23,10 @@ app.get('/', function(req, res){
   res.sendFile('index.html', {root: __dirname});
 });
 
+app.get('/careers', function(req, res){
+  res.sendFile('/public/careers.html', {root: __dirname});
+});
+
 app.post('/appointment', function(req,res) {
   console.log('Sending the following data to belldentalcenter\n', req.body);
   var request = sg.emptyRequest({
